@@ -1,0 +1,489 @@
+/* Button */
+.button {
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    border-radius: 20px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.button-two {
+    background-color: var(--color-two);
+}
+
+.button-two:hover {
+    background-color: var(--color-one);
+    color: #fff;
+}
+
+.button-one {
+    background-color: var(--color-one);
+    color: #fff;
+}
+
+.button-one:hover {
+    background-color: var(--color-two);
+    color: #fff;
+}
+
+/* End Button */
+/* Header */
+.header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* Chiều rộng 100% để header luôn chiếm hết màn hình */
+    z-index: 99;
+    padding: 10px 0;
+    /* Padding cho header */
+}
+.header .inner-main {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: #fff;
+    height: 80px;
+}
+
+.header .inner-logo img {
+    height: 30px;
+    width: auto;
+}
+
+.header .inner-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .inner-menu ul li {
+    margin: 0 15px;
+}
+
+.header .inner-menu ul li a {
+    color: var(--color-text);
+    font-size: 15px;
+}
+
+.header .inner-menu ul li a:hover {
+    color: var(--color-two);
+    text-decoration: none;
+}
+.header .inner-icon-mobi{
+    display:none;
+}
+
+@media (max-width:992px) {
+    .header .inner-menu{
+        display: none;
+    }
+    .header .inner-icon-mobi {
+        display: block;
+        font-size: 28px;
+    }
+}
+/* End Header */
+/* Section one */
+.section-one {
+    background-image: url(../images/Background.png);
+    padding: 50px 50px;
+    height: 100vh;
+    /*100% chiều cao của viewport (màn hình trình duyệt).*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Phóng to/thu nhỏ ảnh nền để che phủ toàn bộ phần tử mà không làm méo ảnh (có thể cắt bớt nếu tỉ lệ không khớp).*/
+    background-position: center bottom;
+    /*Căn vị trí ảnh nền:
+center: canh giữa theo chiều ngang.
+bottom: canh dưới theo chiều dọc.
+Tức là ảnh nền sẽ đặt giữa ngang và dính sát đáy phần tử.*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one .inner-wrap {
+    color: #fff;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+}
+
+.section-one .inner-wrap .inner-title {
+    margin-bottom: 20px;
+}
+
+.section-one .inner-wrap .button-two {
+    margin: 20px 0;
+}
+
+/* End Section one */
+/* Section two */
+.section-two {
+    margin-top: -250px;
+}
+
+.section-two .inner-box {
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-two .inner-box .inner-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--color-one);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section-two .inner-box .inner-icon:hover {
+    background-color: var(--color-two);
+}
+
+.section-two .inner-box .inner-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* k nên để cover vì để cover thì ảnh sẽ bị cắt xén mất đi*/
+}
+
+.section-two .inner-box .inner-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin: 10px 0;
+}
+
+.section-two .inner-box .inner-desc {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+/* End Section two */
+/* Section three */
+.section-three {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.row {
+    align-items: center;
+}
+
+.section-three .inner-image {
+    text-align: center;
+}
+
+.section-three .inner-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-three .inner-border-bottom {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+}
+
+/* End Section three */
+/* Section four */
+.section-four {
+    padding: 100px 0;
+    background-image: url(../images/work-process-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; /*  Giúp ảnh nền phủ đầy phần tử */
+    background-position: center center;/*  Căn giữa hình nền */
+    color: #fff;
+    text-align: center;
+}
+
+.section-four .inner-content .inner-title {
+    margin-bottom: 20px;
+}
+
+.section-four .inner-content .inner-desc {
+    margin-bottom: 40px;
+}
+
+.section-four .inner-box {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.section-four .inner-box .inner-title {
+    color: black;
+}
+
+.section-four .inner-box .inner-desc {
+    color: var(--color-text);
+}
+
+/* End Section four */
+/* Section five */
+.section-five {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-five .inner-content .inner-title {
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.section-five .inner-content .inner-desc {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.section-five .inner-box {
+    padding: 30px 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.section-five .inner-box .inner-image {
+    margin-bottom: 40px;
+}
+
+.section-five .inner-box .inner-desc {
+    margin-bottom: 40px;
+}
+
+.section-five .inner-box .inner-name {
+    font-weight: 300;
+    color: black;
+}
+
+.section-five .inner-box .inner-work {
+    font-weight: 300;
+    color: var(--color-two);
+}
+
+/* End Section five */
+/* Section six */
+.section-six {
+    background-color: #F2F2FE;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-six .inner-content .inner-title {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.section-six .inner-content .inner-desc {
+    margin-bottom: 50px;
+}
+
+.section-six .inner-box {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.section-six .inner-box .inner-title {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.section-six .inner-box .inner-price {
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    background-color: var(--color-one);
+    color: #FFFFFF;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+}
+
+.section-six .inner-box .inner-price:hover {
+    background-color: var(--color-two);
+}
+
+.section-six .inner-box .inner-price div {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.section-six .inner-box .inner-price span {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+/* End Section six */
+/* Section seven */
+.section-seven {
+    background-image: url(../images/Background.png);
+    padding: 100px 30px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.section-seven .inner-num {
+    font-size: 40px;
+}
+.section-seven .inner-box{
+    margin-bottom: 20px;
+}
+/* End Section seven */
+/* Section eight */
+.section-eight {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-eight .inner-content .inner-title {
+    color: black;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.section-eight .inner-content .inner-desc {
+    font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+.section-eight .inner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.section-eight .inner-box .inner-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.section-eight .inner-box .inner-title {
+    color: black;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.section-eight .inner-box .inner-desc {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* End Section eight */
+/* Section nine */
+.section-nine {
+    background-color: #F2F2FE;
+    padding: 150px 30px;
+    text-align: center;
+}
+.section-nine .inner-content .inner-title{
+    font-size:28px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 30px;
+}
+.section-nine .inner-content .inner-desc{
+    font-size:16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.section-nine .inner-left .inner-title{
+    font-size:18px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 30px;
+}
+.section-nine .inner-left .inner-desc{
+    font-size:14px;
+    margin-bottom: 30px;
+}
+.section-nine .inner-right input{
+    border-radius: 20px;
+    height: 45px;
+    border: 0;
+    margin-bottom: 30px;    
+}
+.section-nine .inner-right textarea{
+    border-radius: 20px;
+    height: 150px;
+    border: 0;
+    margin-bottom: 30px;    
+}
+/* End Section nine */
+/* Footer */
+.footer{
+    background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 0;
+}
+.footer .inner-social ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 50px;
+}
+.footer .inner-social ul li{
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer .inner-social ul li:hover{
+    background-color: var(--color-two);
+    
+}
+.footer .inner-social ul li a{
+    color: var(--color-one);    
+    display: flex;
+    align-items: center;
+}
+/* End Footer */
