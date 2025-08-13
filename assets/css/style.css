@@ -360,12 +360,36 @@ Tức là ảnh nền sẽ đặt giữa ngang và dính sát đáy phần tử.
     color: #FFFFFF;
     text-align: center;
 }
-
+.section-seven .inner-box{
+    margin-bottom: 20px; 
+    position: relative;
+}
+.section-seven .inner-box::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 20px;
+    background-image: url(../images/circle-dec.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 78%;
+    top: 41%;
+}
 .section-seven .inner-num {
     font-size: 40px;
 }
-.section-seven .inner-box{
-    margin-bottom: 20px;
+.section-seven .inner-content:hover{
+   transform: translateY(-20px); 
+/*Khi người dùng hover, phần tử .inner-box sẽ di chuyển lên trên 20 pixel theo trục dọc (Y-axis).
+-20px là giá trị âm, nên chuyển động là lên trên.*/
+   transition: all 0.3s ease 0s; /*ease: Kiểu chuyển động là nhanh lúc đầu, chậm dần về cuối.*/
+}
+@media (max-width:992px) {
+    .section-seven .inner-box::before{
+        display: none;
+    }
 }
 /* End Section seven */
 /* Section eight */
@@ -399,8 +423,16 @@ Tức là ảnh nền sẽ đặt giữa ngang và dính sát đáy phần tử.
     width: 100%;
     height: auto;
     margin-bottom: 40px;
+    border-radius: 20px;
+    transition: all 0.6s;
 }
-
+.section-eight .inner-box .inner-image{
+    overflow: hidden;
+    border-radius: 20px;
+}
+.section-eight .inner-box .inner-image:hover img{
+    transform: scale(1.1);
+}
 .section-eight .inner-box .inner-title {
     color: black;
     margin-bottom: 30px;
